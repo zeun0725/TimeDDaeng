@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+
 class CalenderView : UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     var numOfDays=[31,28,31,30,31,30,31,31,30,31,30,31]
@@ -18,14 +19,26 @@ class CalenderView : UIViewController, UICollectionViewDelegate, UICollectionVie
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     @IBOutlet weak var DaysCollectionView: UICollectionView!
     
+    
+    @IBOutlet weak var monthButton: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.DaysCollectionView.delegate = self
         self.DaysCollectionView.dataSource = self
         self.DaysCollectionView.reloadData()
-        
-        
+        print(weekDay(currentWeekday))
         print(self.DaysCollectionView.frame.size.width, self.DaysCollectionView.frame.size.height)
+        for index in 0..<day.count {
+            let label = UILabel(frame: CGRect(x: self.DaysCollectionView.frame.size.width/7*CGFloat(index), y: CGFloat(self.monthButton.frame.origin.y)+50.0, width: self.DaysCollectionView.frame.size.width/7, height: 20))
+            
+        
+            label.textAlignment = .left
+            label.text = day[index]
+            self.view.addSubview(label)
+            print(self.DaysCollectionView.frame.size.width/7,label.frame.origin.x,label.frame.width,self.monthButton.frame.origin.y+25)
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

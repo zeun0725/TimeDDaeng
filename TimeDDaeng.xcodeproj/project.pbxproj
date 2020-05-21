@@ -16,6 +16,7 @@
 		622012CE24616D0800E55258 /* TimeDDaengTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622012CD24616D0800E55258 /* TimeDDaengTests.swift */; };
 		622012D924616D0800E55258 /* TimeDDaengUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622012D824616D0800E55258 /* TimeDDaengUITests.swift */; };
 		622012E72461780E00E55258 /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622012E62461780E00E55258 /* CalenderView.swift */; };
+		62D51B8F2476ABB600EE6C03 /* NowDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D51B8E2476ABB600EE6C03 /* NowDate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		622012D824616D0800E55258 /* TimeDDaengUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDDaengUITests.swift; sourceTree = "<group>"; };
 		622012DA24616D0800E55258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		622012E62461780E00E55258 /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
+		62D51B8E2476ABB600EE6C03 /* NowDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowDate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				622012C424616D0700E55258 /* Info.plist */,
 				622012BC24616D0300E55258 /* TimeDDaeng.xcdatamodeld */,
 				622012E62461780E00E55258 /* CalenderView.swift */,
+				62D51B8E2476ABB600EE6C03 /* NowDate.swift */,
 			);
 			path = TimeDDaeng;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				622012BE24616D0300E55258 /* TimeDDaeng.xcdatamodeld in Sources */,
+				62D51B8F2476ABB600EE6C03 /* NowDate.swift in Sources */,
 				622012B824616D0300E55258 /* ViewController.swift in Sources */,
 				622012E72461780E00E55258 /* CalenderView.swift in Sources */,
 				622012B624616D0300E55258 /* AppDelegate.swift in Sources */,
