@@ -29,14 +29,16 @@ class CalenderView : UIViewController, UICollectionViewDelegate, UICollectionVie
         self.DaysCollectionView.reloadData()
         print(weekDay(currentWeekday))
         print(self.DaysCollectionView.frame.size.width, self.DaysCollectionView.frame.size.height)
-        for index in 0..<day.count {
-            let label = UILabel(frame: CGRect(x: self.DaysCollectionView.frame.size.width/7*CGFloat(index), y: CGFloat(self.monthButton.frame.origin.y)+50.0, width: self.DaysCollectionView.frame.size.width/7, height: 20))
-            
         
-            label.textAlignment = .left
+        for index in 0..<day.count {
+            let label = UILabel(frame: CGRect(x: self.DaysCollectionView.frame.origin.x+(self.DaysCollectionView.frame.width/7-self.DaysCollectionView.frame.origin.x/CGFloat(2))*CGFloat(index)-CGFloat(0.5*Double(index)), y: CGFloat(self.monthButton.frame.origin.y+self.DaysCollectionView.frame.origin.y)/2, width: self.DaysCollectionView.frame.width/7-self.DaysCollectionView.frame.origin.x/CGFloat(2), height: 20))
+            label.layer.borderColor=UIColor.black.cgColor
+            label.layer.borderWidth=1
+            label.textAlignment = .center
             label.text = day[index]
+
             self.view.addSubview(label)
-            print(self.DaysCollectionView.frame.size.width/7,label.frame.origin.x,label.frame.width,self.monthButton.frame.origin.y+25)
+            print(label.frame.size,label.frame.origin.x,label.frame.width,self.monthButton.frame.origin.y+25)
         }
         
     }
@@ -58,6 +60,7 @@ class CalenderView : UIViewController, UICollectionViewDelegate, UICollectionVie
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let itemSizeWidth = collectionView.frame.width
         let itemSizeHeight = collectionView.frame.height
+
         return CGSize(width: itemSizeWidth/7, height: itemSizeHeight/5)
         //return CGSize(width: collectionView.frame.width/3, height: collectionView.frame.height/3)
     }

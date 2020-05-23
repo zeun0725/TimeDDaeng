@@ -23,15 +23,15 @@
                                 <state key="normal" title="&lt;"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqU-g0-1B0">
-                                <rect key="frame" x="186" y="120" width="42" height="21"/>
+                                <rect key="frame" x="186" y="120" width="42" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="o1g-XK-cMB">
-                                <rect key="frame" x="10" y="211" width="394" height="621"/>
+                                <rect key="frame" x="10" y="220" width="394" height="612"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mQg-x3-rmR">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iBL-YI-itm">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -67,7 +67,9 @@
                         <constraints>
                             <constraint firstItem="o1g-XK-cMB" firstAttribute="top" secondItem="GqU-g0-1B0" secondAttribute="bottom" constant="70" id="0aL-VQ-VuR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W6A-i1-cod" secondAttribute="trailing" constant="50" id="46l-45-33u"/>
+                            <constraint firstItem="W6A-i1-cod" firstAttribute="centerY" secondItem="kC1-lI-JbA" secondAttribute="centerY" id="4oz-4U-klm"/>
                             <constraint firstItem="o1g-XK-cMB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Bfb-T6-EWN"/>
+                            <constraint firstItem="GqU-g0-1B0" firstAttribute="centerY" secondItem="kC1-lI-JbA" secondAttribute="centerY" id="DGS-uq-kKQ"/>
                             <constraint firstItem="6Py-40-PCf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="K9P-bb-y70"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o1g-XK-cMB" secondAttribute="trailing" constant="10" id="PzJ-A2-2y5"/>
                             <constraint firstItem="kC1-lI-JbA" firstAttribute="top" secondItem="6Py-40-PCf" secondAttribute="bottom" constant="25" id="X3J-4F-TGd"/>
